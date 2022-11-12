@@ -1,13 +1,13 @@
 package app
 
 import (
-	api "github.com/firehead666/infotecs-go-test-task/server/api/v1/proto/gen"
-	"github.com/firehead666/infotecs-go-test-task/server/internal/config"
-	"github.com/firehead666/infotecs-go-test-task/server/internal/domain/server"
-	"github.com/firehead666/infotecs-go-test-task/server/internal/domain/transaction"
-	"github.com/firehead666/infotecs-go-test-task/server/internal/domain/wallet"
-	"github.com/firehead666/infotecs-go-test-task/server/pkg/client/couchdb"
-	"github.com/firehead666/infotecs-go-test-task/server/pkg/logging"
+	api "github.com/titor999/infotecs-go-ewallet/server/api/v1/proto/gen"
+	"github.com/titor999/infotecs-go-ewallet/server/internal/config"
+	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/server"
+	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/transaction"
+	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/wallet"
+	"github.com/titor999/infotecs-go-ewallet/server/pkg/client/couchdb"
+	"github.com/titor999/infotecs-go-ewallet/server/pkg/logging"
 	"google.golang.org/grpc"
 	"net"
 )

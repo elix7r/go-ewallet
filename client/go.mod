@@ -1,10 +1,10 @@
-module github.com/firehead666/infotecs-go-test-task/client
+module github.com/titor999/infotecs-go-ewallet/client
 
 go 1.18
 
 require (
 	github.com/ilyakaznacheev/cleanenv v1.3.0
-	github.com/firehead666/infotecs-go-test-task/server v0.0.0
+	github.com/titor999/infotecs-go-ewallet/server v0.0.0
 	google.golang.org/grpc v1.48.0
 )
 
@@ -22,5 +22,5 @@ require (
 )
 
 replace (
-	github.com/firehead666/infotecs-go-test-task/server v0.0.0 => ../server
+	github.com/titor999/infotecs-go-ewallet/server v0.0.0 => ../server
 )

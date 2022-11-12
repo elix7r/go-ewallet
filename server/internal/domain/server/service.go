@@ -2,9 +2,9 @@ package server
 
 import (
 	"context"
-	api "github.com/firehead666/infotecs-go-test-task/server/api/v1/proto/gen"
-	"github.com/firehead666/infotecs-go-test-task/server/internal/domain/transaction"
-	"github.com/firehead666/infotecs-go-test-task/server/internal/domain/wallet"
+	api "github.com/titor999/infotecs-go-ewallet/server/api/v1/proto/gen"
+	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/transaction"
+	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/wallet"
 )
 
 type EWalletGRPCServer struct {

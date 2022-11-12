@@ -1,4 +1,4 @@
-module github.com/firehead666/infotecs-go-test-task/server
+module github.com/titor999/infotecs-go-ewallet/server
 
 go 1.18
 

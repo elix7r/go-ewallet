@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/firehead666/infotecs-go-test-task/server/internal/app"
-	"github.com/firehead666/infotecs-go-test-task/server/internal/config"
-	"github.com/firehead666/infotecs-go-test-task/server/pkg/logging"
+	"github.com/titor999/infotecs-go-ewallet/server/internal/app"
+	"github.com/titor999/infotecs-go-ewallet/server/internal/config"
+	"github.com/titor999/infotecs-go-ewallet/server/pkg/logging"
 	"log"
 )
 

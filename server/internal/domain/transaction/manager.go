@@ -3,7 +3,7 @@ package transaction
 import (
 	"errors"
 	"fmt"
-	"github.com/firehead666/infotecs-go-test-task/server/internal/domain/wallet"
+	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/wallet"
 )
 
 type ManagerCommand interface {

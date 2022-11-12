@@ -3,7 +3,7 @@ package domain
 import (
 	"context"
 	"fmt"
-	api "github.com/firehead666/infotecs-go-test-task/server/api/v1/proto/gen"
+	api "github.com/titor999/infotecs-go-ewallet/server/api/v1/proto/gen"
 )
 
 type CLIService struct {
