@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package ewallet;
+
+option go_package = "github.com/firehead666/infotecs-go-test-task/ewallet;ewallet";
+
+service EWallet {
+  rpc Send(SendRequest) returns(SendResponse);
+  rpc GetLast(GetLastRequest) returns(GetLastResponse);
+}
+
+message TransactionRequest {
+  string from = 1;
+  string to = 2;
+  float amount = 3;
+  int64 type = 4;
+}
+
+message TransactionResponse {
+  string to = 1;
+  float amount = 2;
+  string date = 3;
+}
+
+message SendRequest {
+  TransactionRequest trq = 1;
+}
+
+message SendResponse {
+  bool isSuccessful = 1;
+}
+
+message GetLastRequest {
+}
+
+message GetLastResponse {
+  repeated TransactionResponse t = 1;
+}

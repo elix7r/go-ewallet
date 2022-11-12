@@ -1,0 +1,13 @@
+is_debug: true
+
+grpc_server_config:
+  port: 8877
+
+storage_config:
+  port: 5999
+  host: localhost
+  username: user
+  password: password
+
+app_config:
+  log_level: trace

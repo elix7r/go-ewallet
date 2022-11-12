@@ -1,0 +1,14 @@
+is_debug: true
+
+listen:
+  port: 8877
+  type: tcp
+
+storage_config:
+  port: 5999
+  host: localhost
+  username: user
+  password: password
+
+app_config:
+  log_level: trace
