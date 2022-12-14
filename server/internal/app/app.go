@@ -4,6 +4,7 @@ import (
 	api "github.com/titor999/infotecs-go-ewallet/server/api/v1/proto/gen"
 	"github.com/titor999/infotecs-go-ewallet/server/internal/config"
 	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/server"
+	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/ssl"
 	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/transaction"
 	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/wallet"
 	"github.com/titor999/infotecs-go-ewallet/server/pkg/client/couchdb"
@@ -41,8 +42,16 @@ func (a *App) Run() {
 	ws := wallet.NewService(db, &logger)
 	ts := transaction.NewService(db, &logger, &ws)
 
+	logger.Debug("Load TLS Certificate...")
+	tlsCredentials, err := ssl.LoadTLSCredentials()
+	if err != nil {
+		logger.Fatalf("cannot load TLS credentials: %v", err)
+	}
+
 	logger.Info("initializing grpc services...")
-	s := grpc.NewServer()
+	s := grpc.NewServer(
+		grpc.Creds(tlsCredentials),
+	)
 	api.RegisterEWalletServer(s, server.NewEWalletGRPCServer(&ws, &ts))
 
 	logger.Println("server listening at %v", lis.Addr())
