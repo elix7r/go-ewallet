@@ -1,10 +1,10 @@
-module github.com/titor999/infotecs-go-ewallet/client
+module github.com/go-ewallet/client
 
 go 1.18
 
 require (
+	github.com/go-ewallet/server v0.0.0
 	github.com/ilyakaznacheev/cleanenv v1.3.0
-	github.com/titor999/infotecs-go-ewallet/server v0.0.0
 	google.golang.org/grpc v1.48.0
 )
 
@@ -21,6 +21,4 @@ require (
 	olympos.io/encoding/edn v0.0.0-20201019073823-d3554ca0b0a3 // indirect
 )
 
-replace (
-	github.com/titor999/infotecs-go-ewallet/server v0.0.0 => ../server
-)
+replace github.com/go-ewallet/server v0.0.0 => ../server

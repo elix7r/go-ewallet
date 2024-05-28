@@ -1,14 +1,14 @@
 package app
 
 import (
-	api "github.com/titor999/infotecs-go-ewallet/server/api/v1/proto/gen"
-	"github.com/titor999/infotecs-go-ewallet/server/internal/config"
-	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/server"
-	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/ssl"
-	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/transaction"
-	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/wallet"
-	"github.com/titor999/infotecs-go-ewallet/server/pkg/client/couchdb"
-	"github.com/titor999/infotecs-go-ewallet/server/pkg/logging"
+	api "github.com/go-ewallet/server/api/v1/proto/gen"
+	"github.com/go-ewallet/server/internal/config"
+	"github.com/go-ewallet/server/internal/domain/server"
+	"github.com/go-ewallet/server/internal/domain/ssl"
+	"github.com/go-ewallet/server/internal/domain/transaction"
+	"github.com/go-ewallet/server/internal/domain/wallet"
+	"github.com/go-ewallet/server/pkg/client/couchdb"
+	"github.com/go-ewallet/server/pkg/logging"
 	"google.golang.org/grpc"
 	"net"
 )
@@ -54,7 +54,7 @@ func (a *App) Run() {
 	)
 	api.RegisterEWalletServer(s, server.NewEWalletGRPCServer(&ws, &ts))
 
-	logger.Println("server listening at %v", lis.Addr())
+	logger.Printf("server listening at %v", lis.Addr())
 	if err := s.Serve(lis); err != nil {
 		logger.Fatalf("failed to serve: %v", err)
 	}

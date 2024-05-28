@@ -2,8 +2,8 @@ package couchdb
 
 import (
 	"github.com/leesper/couchdb-golang"
-	"github.com/titor999/infotecs-go-ewallet/server/internal/config"
-	"github.com/titor999/infotecs-go-ewallet/server/pkg/logging"
+	"github.com/go-ewallet/server/internal/config"
+	"github.com/go-ewallet/server/pkg/logging"
 )
 
 type CouchDB struct {

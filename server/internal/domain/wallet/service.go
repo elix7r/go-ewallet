@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"github.com/google/uuid"
 	"github.com/leesper/couchdb-golang"
-	couchdb2 "github.com/titor999/infotecs-go-ewallet/server/pkg/client/couchdb"
-	"github.com/titor999/infotecs-go-ewallet/server/pkg/logging"
-	"github.com/titor999/infotecs-go-ewallet/server/pkg/util"
+	couchdb2 "github.com/go-ewallet/server/pkg/client/couchdb"
+	"github.com/go-ewallet/server/pkg/logging"
+	"github.com/go-ewallet/server/pkg/util"
 	"net/url"
 )
 

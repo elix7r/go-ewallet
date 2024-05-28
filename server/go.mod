@@ -1,4 +1,4 @@
-module github.com/titor999/infotecs-go-ewallet/server
+module github.com/go-ewallet/server
 
 go 1.18
 

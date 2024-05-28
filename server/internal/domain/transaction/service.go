@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"github.com/google/uuid"
 	"github.com/leesper/couchdb-golang"
-	"github.com/titor999/infotecs-go-ewallet/server/internal/domain/wallet"
-	couchdb2 "github.com/titor999/infotecs-go-ewallet/server/pkg/client/couchdb"
-	"github.com/titor999/infotecs-go-ewallet/server/pkg/logging"
-	"github.com/titor999/infotecs-go-ewallet/server/pkg/util"
+	"github.com/go-ewallet/server/internal/domain/wallet"
+	couchdb2 "github.com/go-ewallet/server/pkg/client/couchdb"
+	"github.com/go-ewallet/server/pkg/logging"
+	"github.com/go-ewallet/server/pkg/util"
 	"time"
 )
 

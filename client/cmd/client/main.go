@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/titor999/infotecs-go-ewallet/client/internal/app"
-	"github.com/titor999/infotecs-go-ewallet/client/internal/config"
+	"github.com/go-ewallet/client/internal/app"
+	"github.com/go-ewallet/client/internal/config"
 	"log"
 )
 

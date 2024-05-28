@@ -1,8 +1,6 @@
 package util
 
-import (
-	"encoding/json"
-)
+import "encoding/json"
 
 func Map2Json(m map[string]interface{}) (string, error) {
 	jsn, err := json.MarshalIndent(m, "", "    ")
@@ -41,5 +39,4 @@ func Bytes2Json(bytes []byte) (string, error) {
 	}
 
 	return string(prettyJson), nil
-
 }
